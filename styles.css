@@ -117,7 +117,7 @@ div.footer {
     font-style: italic;
 }
 /* Media Kueries for a responsive height */
-@media (max-height: 560px) {
+@media (max-height: 650px) {
     body {
         height: max-content;
     }
@@ -152,5 +152,8 @@ div.footer {
     div.inputBox {
         width: calc(50% - 10px);
         margin: 0;    
+    }
+    textarea {
+        height: 130px;
     }
 }
