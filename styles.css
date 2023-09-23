@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    font-family: 'Mooli', sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/hongkongTech.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+}
+
+/* Styling the parent container for the form */
+div.form {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 20px 20px;
+    position: relative;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0 0;
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+h2, label {
+    font-family: 'Poppins', sans-serif;
+}
+h2 {
+    color: #000;
+    font-size: 3.8rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 20px 0 0;
+}
+label {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 3px;
+}
+div.inputBox {
+    margin: 15px 0;
+}
+input, select {
+    display: block;
+    width: 100%;
+    height: 35px;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+    padding: 1rem 0.5rem 1rem 0.8rem;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid #000;
+    outline: none;
+}
+select {
+    padding: 0;
+}
+input::placeholder {
+    font-size: 1.3rem;
+    color:rgba(0, 0, 0, 0.4);
+    font-weight: 400;
+}
+input:focus, select:focus {
+    border: 2px solid blue;
+}
+
+div.textArea {
+    margin: 15px 0;
+}
+textarea {
+    width: 100%;
+    height: 70px;
+    padding: 1rem 0.5rem;
+    border-radius: 5px;
+    resize: vertical;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid #000;
+}
+input[type="submit"] {
+    height: 40px;
+    line-height: 100%;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 20px 0 30px;
+}
+/* Styling the copyright  */
+div.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+}
+/* Media Kueries for a responsive height */
+@media (max-height: 560px) {
+    body {
+        height: max-content;
+    }
+}
+/* Media kueries for responsiveness */
+@media (min-width: 768px) {
+    div.form {
+        width: 70%;
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(5px);
+        padding: 30px 20px 20px;
+        margin: 0 auto;
+    }
+    h1 {
+        margin: 0;
+    }
+    h2 {
+        color: #fff;
+        margin: 40px 0 20px;
+    }
+    div.inputs {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        /* justify-content: center; */
+        gap: 20px 20px;
+    }
+    input, select, textarea {
+        border: 1px solid #fff;
+    }
+    div.inputBox {
+        width: calc(50% - 10px);
+        margin: 0;    
+    }
+}
